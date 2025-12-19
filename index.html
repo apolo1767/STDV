@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>All-in-One Business System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">⚡ Business</div>
+
+    <nav>
+      <button onclick="loadView('dashboard')">Dashboard</button>
+      <button onclick="loadView('inventory')">Inventory</button>
+      <button onclick="loadView('sales')">Sales</button>
+      <button onclick="loadView('finance')">Finance</button>
+      <button onclick="loadView('crm')">CRM</button>
+      <button onclick="loadView('hr')">HR</button>
+      <button onclick="loadView('settings')">Settings</button>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <header class="topbar">
+      <h1 id="pageTitle">Dashboard</h1>
+      <div class="plan">Plan: <strong>$45/month</strong></div>
+    </header>
+
+    <section class="content" id="content"></section>
+  </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

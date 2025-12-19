@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+/* LAYOUT */
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  background: rgba(2, 6, 23, 0.9);
+  border-right: 1px solid rgba(255,255,255,0.05);
+  padding: 24px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.sidebar nav button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #cbd5f5;
+  text-align: left;
+  padding: 12px 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sidebar nav button:hover {
+  background: rgba(59,130,246,0.15);
+  color: #fff;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 24px 32px;
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.plan {
+  background: rgba(59,130,246,0.15);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* CONTENT */
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #c7d2fe;
+}
+
+.card strong {
+  font-size: 28px;
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: #fff;
+}
+
+button.action {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+button.action:hover {
+  background: #1d4ed8;
+}
